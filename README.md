@@ -1,4 +1,4 @@
-This repository contains working code for paper 'On Complexity of Teaching a Family of Linear Behavior Cloning Learners' Teaching Consistent Linear Behavior Cloning learner paper.
+This repository contains working code for paper 'On the Complexity of Teaching a Family of Linear Behavior Cloning Learners' accepted at NeurIPS 2024. We provide steps for running all the three environments used in the paper below.
 
 
 # Steps to run the code :
