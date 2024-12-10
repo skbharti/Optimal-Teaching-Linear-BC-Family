@@ -1,4 +1,4 @@
-This repository contains working code for paper **'On the Complexity of Teaching a Family of Linear Behavior Cloning Learners'** accepted at NeurIPS 2024. We provide steps for running all the three environments used in the paper below.
+This repository contains working code for [paper](https://openreview.net/forum?id=4SAR7IRqmB&nesting=2&sort=date-desc) **'On the Complexity of Teaching a Family of Linear Behavior Cloning Learners'** accepted at NeurIPS 2024. We provide steps for running all the three environments used in the paper below.
 
 
 # Steps to run the code :
