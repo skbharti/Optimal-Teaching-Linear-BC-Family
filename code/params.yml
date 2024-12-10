@@ -1,0 +1,82 @@
+########-########-########-########-########-########-########-########  path parameters
+# all paths(except the project_dir) are referenced wrt project_dir
+# project_dir is defined wrt to the directory containing params.yml
+project_dir : '../'
+output_dir : 'outputs'
+project_tag : 'TEACH'    # tag used to label the output data directory of each run
+terminal_output_to_log_file : False
+save_output : 'partial'   # full, partial, only_size, none
+
+record : True
+
+
+########-########-######## verbose and tolerance : higher the number more verbose is the output
+verbose : 1
+tol : 1e-10     # error tolerance : absolute error tolerance for comparing components of vectors
+
+
+
+
+
+
+########-########-########-########-########-########-########-########-########-########-########
+# instance type specific parameters : three major type of instances currently : 
+#             1. polygon_tower_range  2. pick_the_diamond 3. grid_world_navigation
+########-########-########-########-########-########-########-########-########-########-########
+instance_type : 'grid_world_navigation'
+
+########-######## polygon_tower parameters
+s_begin : 2
+s_end : 6
+
+########-######## pick_the_diamond parameters
+diamond_edges : [0,3,4,5,6]
+num_slots : 6
+
+########-######## grid_world_navigation parameters
+grid_size : 5
+repeat_moves : True
+feature_type : 'global'      # option : ['local', 'global']
+
+
+
+
+
+########-########-########-########-########-########-######## parallelization parameters
+run_parallel : True
+num_jobs_in_parallel : 1
+repeat : 1
+
+########-######## polygon_tower parameters
+s_begin : 2
+s_end_list : [3,4,5,6,7,8,9,10]
+
+########-######## pick_the_diamond parameters
+diamond_edges : [0,3,4,5,6]
+num_slots_list : [4,5,6] 
+
+########-######## grid_world_navigation parameters
+grid_size_list : [5]
+repeat_moves : True
+feature_type : 'local'      # option : ['local', 'global']
+
+
+
+########-########-########-########-######## randomized teaching parameters
+num_randomized_trials : 20
+
+
+########-########-########-########-######## plotting and output parameters
+plot_3d : True
+show_plot : True   # show plot in browser after plotting
+
+########-######## save a note for to remember some fact about new run
+run_notes : 'grid world navigation example with 5 slots - to be used as demonstration in paper'  
+
+# list of files to be saved in run : path are wrt to code directory in which params.yml file is in.
+save_file_list :
+  - 'code/params.yml'
+  - 'code/driver.py'
+  - 'code/teaching.py'
+  - 'code/helper.py'
+  - 'code/instance_generator.py'
